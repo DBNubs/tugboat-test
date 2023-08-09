@@ -16,3 +16,6 @@ services:
         # Link the document root to the expected path. This example links the
         # root of the git repository to the docroot
         - ln -snf "${TUGBOAT_ROOT}" "${DOCROOT}"
+    urls:
+      # Conduct Lighthouse audits of the these URLs using the default options
+      - /
